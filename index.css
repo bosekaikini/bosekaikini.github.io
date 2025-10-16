@@ -1,0 +1,17 @@
+p {
+    color: blue; text-align: center;
+}
+
+h1 {
+    color: red; text-align: center;
+}
+
+body {
+    background: #b8b4b2;
+    font-family:"Times New Roman", Times, serif;
+    margin: 40px;
+}
+
+.big_stuff {
+    font-size: larger;
+}
