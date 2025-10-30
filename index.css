@@ -23,3 +23,20 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.project img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+.project p { 
+text-align: center;
+margin: 15px;
+}
