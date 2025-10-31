@@ -9,6 +9,7 @@ h1 {
 body {
     background: #b8b4b2;
     font-family:"Times New Roman", Times, serif;
+    font-size: medium;
     margin: 40px;
 }
 
@@ -24,7 +25,16 @@ img {
     margin-right: auto;
 }
 
-.project img {
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+.problem_statement {
+    background-color: #b9a2b9;
+}
+
+.problem_statement img {
     width: 150px;
     height: auto;
     display: block;
@@ -32,11 +42,10 @@ img {
     margin-right: auto;
 }
 
-a {
-    text-decoration: none;
-    color: purple;
+.personnas {
+    background-color: #726359;
 }
-.project p { 
-text-align: center;
-margin: 15px;
+
+.sketches {
+    background-color: #9a8683;
 }
