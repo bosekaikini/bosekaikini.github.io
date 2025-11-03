@@ -31,7 +31,11 @@ a {
 }
 
 .problem_statement {
-    background-color: #b9a2b9;
+    background-color: #9a8683;
+}
+
+.affinity_diagram {
+    background-color: #9a8683;
 }
 
 .problem_statement img {
@@ -43,7 +47,7 @@ a {
 }
 
 .personnas {
-    background-color: #726359;
+    background-color: #9a8683;
 }
 
 .sketches {
