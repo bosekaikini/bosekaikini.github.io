@@ -1,55 +1,37 @@
-p {
-    color: blue; text-align: center;
-}
-
-h1 {
-    color: red; text-align: center;
-}
-
 body {
-    background: #b8b4b2;
-    font-family:"Times New Roman", Times, serif;
-    font-size: medium;
-    margin: 40px;
+	background: cornsilk;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
-.big_stuff {
-    font-size: larger;
+h1 {
+	color: darkslategrey;
+	text-align: center;
 }
-
-img {
-    width: 300px;
-    height: auto;
+.projects { 
+	display:flex; 
+	flex-wrap:wrap;  
+} 
+.projects h2 {
+	width: 100%;
+}
+.project {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: lightslategray;
+    border-radius: 25%;
+}
+.project h3 {
+    margin-left: 50px;
+}
+.project img {
+    width: 400px;
+    height: 300px;
+    margin: 10px auto;
+    border: 2px solid navy;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
-
-a {
-    text-decoration: none;
-    color: purple;
-}
-
-.problem_statement {
-    background-color: #9a8683;
-}
-
-.affinity_diagram {
-    background-color: #9a8683;
-}
-
-.problem_statement img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.personnas {
-    background-color: #9a8683;
-}
-
-.sketches {
-    background-color: #9a8683;
+.project p {
+    text-align: center;
+    margin: 15px;
 }
