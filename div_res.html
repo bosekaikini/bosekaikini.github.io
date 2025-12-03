@@ -1,117 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <link rel="stylesheet" href="div_res.css" >
-  </head>
-<body>
-  <div class="header">
-    <h1>Bose Kaikini</h1>
-    <div class="contact">
-      LinkedIn: bosekaikini | Email: bose.kaikini@gmail.com | Columbia, SC
-    </div>
-    <hr>
-  </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose Kaikini - Resume (with Gemini)</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+        }
+        /* Custom style for the section dividers - now solid black line */
+        .section-divider {
+            border-bottom: 1px solid #000000; /* Thin black line */
+            margin-bottom: 0.5rem; /* Reduced margin for tighter spacing like a traditional resume */
+            padding-bottom: 0.125rem; /* Small padding above the line */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16">
 
-  <div class="section">
-    <div class="section-title">Education</div>
-    <div class="section-content">
-      <strong>(2025-Present) University of South Carolina</strong>
-      <strong>(2023-2025) Governor's School for Science and Mathematics (Hartsville, US)</strong>
-      <strong>(2020-2023) Dhirubhai Ambani International School (Mumbai, India)</strong>
-      <br>
-    </div>
-  </div>
+    <!-- RESUME CONTAINER (Simulates a centered document page) -->
+    <div class="max-w-4xl mx-auto bg-white shadow-none rounded-none p-6 sm:p-8 md:p-10 border-0">
 
-  <div class="section">
-    <div class="section-title">Experience and Engagement</div>
-    <h2>Internships</h2>
-    <div class="section-content">
-      <strong>Research</strong>, USC Engineering and Computing
-      <ul>
-        <li>Implemented topological data analysis techniques to analyze LiDAR plots on NSF funding (Summer 2025)</li>
-      </ul>
-      <strong>Finance</strong>, SC Federal Credit Union
-      <ul>
-        <li>Financial analysis and projections for overdraft policy overhaul impacting over 12000 clients (Summer 2024)</li>
-      </ul>
-        <strong>Economics</strong>, Newberry County Department of Economic Development
-      <ul>
-        <li>Customer acquisition and project analysis worth $10 million+ (Spring 2024)</li>
-      </ul>
-        <strong>Forecasting</strong>, RSPN Equity Research
-      <ul>
-        <li>US mortgage and real estate market pricing and projections (Spring 2024)</li>
-      </ul>
-    </div>   
-    <h2>Awards and Competitions (Fall 2025)</h2>
-    <div class="section-content">
-      <ul>
-        <strong>NASA SpaceApps Hackathon</strong> 
-        <li>Winner - Best Use of Data</li>
-      </ul> 
-      <ul>
-        <strong>SC Quantum Quantathonv2</strong>
-        <li>Winner - Quantum Variational Machine Learning</li>
-      </ul>
-      <ul>
-        <strong>Citadel University Applied Math Competition</strong> 
-        <li>Top 3 - Modeling Unbiased State Voting Lines</li>
-      </ul> 
-      <ul>
-        <strong>Citadel University Applied Math Competition</strong>
-        <li>Top 3 - Modeling Unbiased State Voting Lines</li>
-      </ul>
-      <ul>
-        <strong>HackPrinceton</strong> 
-        <li>Identified urban structural/contamination issues through camera based ML scraper</li>
-      </ul>
-      <ul>
-        <strong>USC Journey Research Grant Recipient</strong> 
-        <li>Undergraduate STEM Research Grant</li>
-      </ul>
-    </div>   
-    </div>
-      
-  <div class="section">
-    <div class="section-title">Projects</div>
-    <div class="section-content">
-      <ul>
-        <strong>Spectral Graph Theory Research</strong>
-        <li>Testing computational approach to higher vertex values for DS graphs and Haemers’ Conjecture, targeting an efficient quasipolynomial bound for DS graph proportion</li>
-      </ul>
-        <ul>
-        <strong>Algorithmic Trading Modeling</strong>
-        <li>Developing and optimizing trading algorithms using data-driven and ML-based strategies, Alpaca API based</li>
-      </ul>
-        <ul>
-        <strong>SIMIODE Differential Modeling</strong>
-        <li>Modeling the degradation of generative AIs trained on synthetic data</li>
-      </ul>
-        <ul>
-        <strong>SIMIODE Differential Modeling</strong>
-        <li>Modeling the degradation of generative AIs trained on synthetic data</li>
-      </ul>
-        <ul>
-        <strong>Image Processing ML Model</strong>
-        <li>Designing application to approximate mathematical functions from user-drawn images using ML recognition and nonlinear error reduction</li>
-      </ul>
-    </div>
-  </div>
+        <!-- HEADER / CONTACT INFO -->
+        <header class="mb-4 pb-1 border-b-2 border-gray-900">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-1 tracking-tight">Bose Kaikini</h1>
+            <div class="flex flex-wrap gap-x-4 text-sm text-gray-700">
+                <a href="mailto:bose.kaikini@gmail.com" class="hover:underline transition duration-150">bose.kaikini@gmail.com</a>
+                <span>|</span>
+                <span>+1 803-924-0728</span>
+                <span>|</span>
+                <a href="https://linkedin.com/in/" target="_blank" class="hover:underline transition duration-150">in LinkedIn</a>
+            </div>
+        </header>
 
-  <div class="section">
-    <div class="section-title">Skills</div>
-    <div class="section-content">
-      <ul>
-        <li>Programming Languages/Platforms: Python, Java, Kotlin, C++, SQL, Unix, Sage, HTML, CSS, JavaScript, qBraid, R, Jupyter Notebooks, React, Git, Azure, SLURM, Jira</li>
-        <li>Math Experience: Boolean Functions, Topological Data Analysis, Financial Math, Linear and Abstract Algebra, ODEs, Calculus I–III</li>
-        <li>Languages: English (native), Hindi (native), Spanish (fluent), Mandarin (YCT 4)</li>
-        <li>Campus Involvement: Student Government - Freshman Council & Academics Chair, University Ambassador, USC Emerging Leader Program, Academic Advisory Council Member, Campus Pedestrian Traffic Sentiment Research, Mathematics Department Student Grade</li>
-        <li>Soft Skills: Creativity, Communication, Team Leadership</li>
-      </ul>
+        <!-- SECTION: OVERVIEW -->
+        <section class="mb-5">
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">OVERVIEW</h2>
+            <p class="text-gray-700 text-sm">
+                Computer Science and Math Major with a focus in Machine Learning, Applied Mathematics and Quantitative Finance, with specific interest in stochastic modeling for HFT strategies.
+            </p>
+        </section>
+
+        <!-- SECTION: EDUCATION -->
+        <section class="mb-5">
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">EDUCATION</h2>
+            
+            <!-- USC -->
+            <div class="mb-1.5">
+                <div class="flex justify-between items-start text-sm">
+                    <span class="font-bold text-gray-900">University of South Carolina</span>
+                    <span class="font-medium text-gray-700">2025-Present</span>
+                </div>
+                <div class="flex justify-between items-start text-sm">
+                    <span class="text-gray-700">Double Major in Computer Science and Math</span>
+                    <span class="text-gray-700">GPA: 4.0/4.0</span>
+                </div>
+            </div>
+
+            <!-- Governor's School -->
+            <div class="mb-1.5">
+                <div class="flex justify-between items-start text-sm">
+                    <span class="font-bold text-gray-900">Governor's School for Science and Math</span>
+                    <span class="font-medium text-gray-700">2023-2025</span>
+                </div>
+                <span class="text-gray-700 text-sm">Hartsville, US</span>
+            </div>
+
+            <!-- Dhirubhai Ambani -->
+            <div class="mb-1.5">
+                <div class="flex justify-between items-start text-sm">
+                    <span class="font-bold text-gray-900">Dhirubhai Ambani International School</span>
+                    <span class="font-medium text-gray-700">2020-2023</span>
+                </div>
+                <span class="text-gray-700 text-sm">Mumbai, India</span>
+            </div>
+        </section>
+
+        <!-- SECTION: EXPERIENCE & ENGAGEMENT -->
+        <section class="mb-5">
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">EXPERIENCE & ENGAGEMENT</h2>
+            
+            <h3 class="text-base font-bold text-gray-900 mb-1">Internships</h3>
+            <ul class="space-y-1.5 text-sm text-gray-700 ml-4 list-disc marker:text-black">
+                <!-- Research -->
+                <li>
+                    <span class="font-semibold">Research: USC Engineering and Computing</span>
+                    <span class="float-right font-medium">(Summer 2025)</span>
+                    <p class="mt-0.5">Implemented topological data analysis techniques to analyze LiDAR plots on NSF funding.</p>
+                </li>
+                <!-- Finance -->
+                <li>
+                    <span class="font-semibold">Finance: SC Federal Credit Union</span>
+                    <span class="float-right font-medium">(Summer 2024)</span>
+                    <p class="mt-0.5">Financial analysis and projections for overdraft policy overhaul impacting over 12,000 clients.</p>
+                </li>
+                <!-- Economics -->
+                <li>
+                    <span class="font-semibold">Economics: Newberry County Department of Economic Development</span>
+                    <span class="float-right font-medium">(Spring 2024)</span>
+                    <p class="mt-0.5">Customer acquisition and project analysis worth $10 million+.</p>
+                </li>
+                <!-- Forecasting -->
+                <li>
+                    <span class="font-semibold">Forecasting: RSPN Equity Research</span>
+                    <span class="float-right font-medium">(Spring 2024)</span>
+                    <p class="mt-0.5">US mortgage and real estate market pricing and projections.</p>
+                </li>
+            </ul>
+
+            <h3 class="text-base font-bold text-gray-900 mt-3 mb-1">Awards and Competitions - Fall 2025</h3>
+            <ul class="space-y-1.5 text-sm text-gray-700 ml-4 list-disc marker:text-black">
+                <li>
+                    <span class="font-semibold">NASA Space Apps Hackathon:</span> Winner Best Use of Data
+                </li>
+                <li>
+                    <span class="font-semibold">SC Quantum Quantathon v2:</span> Winner Quantum Variational Machine Learning
+                </li>
+                <li>
+                    <span class="font-semibold">Citadel University Applied Math Competition:</span> Top 3 Modeling Unbiased State Voting Lines
+                </li>
+                <li>
+                    <span class="font-semibold">HackPrinceton:</span> Identified urban structural/contamination issues through camera based ML scraper
+                </li>
+                <li>
+                    <span class="font-semibold">USC Journey Research Grant Recipient</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION: PROJECTS & RESEARCH -->
+        <section class="mb-5">
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">PROJECTS & RESEARCH</h2>
+            <ul class="space-y-1.5 text-sm text-gray-700 ml-4 list-disc marker:text-black">
+                <!-- Spectral Graph Theory -->
+                <li>
+                    <span class="font-semibold">Spectral Graph Theory Research:</span>
+                    <p class="mt-0.5">Testing computational approach to higher vertex values for DS graphs and Haemers' Conjecture, targeting an efficient quasipolynomial bound for DS graph proportion.</p>
+                </li>
+                <!-- Algorithmic Trading -->
+                <li>
+                    <span class="font-semibold">Algorithmic Trading Modeling:</span>
+                    <p class="mt-0.5">Developing and optimizing trading algorithms using data-driven and ML-based strategies, Alpaca API based.</p>
+                </li>
+                <!-- SIMIODE Differential Modeling -->
+                <li>
+                    <span class="font-semibold">SIMIODE Differential Modeling:</span>
+                    <p class="mt-0.5">Modeling the degradation of generative AIs trained on synthetic data.</p>
+                </li>
+                <!-- Image Processing ML Model -->
+                <li>
+                    <span class="font-semibold">Image Processing ML Model:</span>
+                    <p class="mt-0.5">Designing application to approximate mathematical functions from user-drawn images using ML recognition and nonlinear error reduction.</p>
+                </li>
+                <li>
+                    <span class="font-semibold">Undergraduate STEM research grant</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION: TECHNICAL SKILLS -->
+        <section class="mb-5">
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">TECHNICAL SKILLS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1 text-sm text-gray-700">
+                <!-- Programming Languages/Platforms -->
+                <div>
+                    <h3 class="font-semibold text-gray-900 inline">Programming Languages/Platforms:</h3>
+                    <p class="inline"> Python, Java, Kotlin, C++, SQL, Unix, Sage, HTML, CSS, JavaScript, qBraid, R, Jupyter Notebooks, React, Git, Azure, SLURM, Jira</p>
+                </div>
+                <!-- Math Experience -->
+                <div>
+                    <h3 class="font-semibold text-gray-900 inline">Math Experience:</h3>
+                    <p class="inline"> Boolean Functions, Topological Data Analysis, Financial Math, Linear and Abstract Algebra, ODEs, Calculus I-III</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CAMPUS INVOLVEMENT & LANGUAGES -->
+        <section>
+            <h2 class="text-lg font-bold text-gray-900 section-divider uppercase">CAMPUS INVOLVEMENT & LANGUAGES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1 text-sm">
+                <!-- Campus Involvement -->
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Campus Involvement</h3>
+                    <ul class="space-y-1 text-gray-700 list-disc ml-4 marker:text-black">
+                        <li>Student Government Freshman Council & Academics Chair</li>
+                        <li>University Ambassador</li>
+                        <li>USC Emerging Leader Program</li>
+                        <li>Academic Advisory Council Member</li>
+                        <li>Campus Pedestrian Traffic Sentiment Research</li>
+                        <li>Mathematics Department Student Grader</li>
+                    </ul>
+                </div>
+                <!-- Languages -->
+                <div>
+                    <h3 class="font-semibold text-gray-900 mb-1">Languages</h3>
+                    <ul class="space-y-1 text-gray-700 list-disc ml-4 marker:text-black">
+                        <li>English (Native)</li>
+                        <li>Hindi (Native)</li>
+                        <li>Spanish (Fluent)</li>
+                        <li>Mandarin (YCT 4)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </div>
-  </div>
 </body>
 </html>
